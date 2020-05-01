@@ -1,4 +1,4 @@
-# BumbleBeeTracing
+# Bumble_Bee_App
 
 This project was generated with [Angular CLI](https://github.com/CipAndDan/bumblee_bee_app) version 9.1.1.
 

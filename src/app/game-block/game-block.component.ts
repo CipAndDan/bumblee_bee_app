@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./game-block.component.scss']
 })
 export class GameBlockComponent {
-  letters:string[] = ["A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", 
+  letters:string[] = ["A", "B", "C", "D", "E", "F","G", "H", "I", "J", "K", "L", "M", 
   "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
   curentLetter:string = this.letters[0];
 
@@ -34,7 +34,7 @@ export class GameBlockComponent {
   }
 
   playAudio() {
-    let audio = new Audio("../../assets/audio/Hello-SoundBible.com-1812488315.mp3");
+    let audio = new Audio("../../assets/audio/A.mp3");
     audio.load();
     audio.play();
   }

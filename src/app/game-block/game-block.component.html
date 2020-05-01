@@ -1,0 +1,17 @@
+
+ 
+<div class="game-block">
+    <div class="row">
+        <button class="btn btn-primary btn-lg" (click)="previous()">Previous</button>
+        <div class="curent-letter mx-auto d-block">
+            <img src="../../assets/img/{{curentLetter}}.png" alt="{{curentLetter}}" (click)="playAudio()">
+        </div>
+        <button class="btn btn-primary btn-lg" (click)="next()">Next</button>
+    </div>
+</div>
+
+<div class="letters img-fluid">
+    <div *ngFor="let letter of letters" class="letter">
+        <img src="../../assets/img/{{letter}}.png" alt="{{letter}}" (click)="changeCurrentLetter(letter)">
+    </div>
+</div>

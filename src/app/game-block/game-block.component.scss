@@ -1,8 +1,10 @@
 img {
-    width: 200px;
+    width: 400px;
+    cursor: pointer;
 }
 
 .letters {
+    width: 1200px;
     display: flex;
     flex-wrap: wrap;
     .letter {
@@ -15,10 +17,21 @@ img {
 }
 
 .game-block {
-    width: 800px;
-    height: 600px;
-    background-image: url("../../assets/img/background_full.jpg");
+    width: 1200;
+    height: 700px;
+    padding: 120px 0;
+    background-image: url("../../assets/img/background/background_full.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     display: flexbox;
+}
+
+button {
+    width: 200px;
+    height: 150px;
+    margin: 15px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 12px;
+    box-shadow: 2px 10px 17px  #7cadc4
 }

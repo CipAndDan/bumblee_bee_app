@@ -35,6 +35,9 @@ export class GameBlockComponent {
 
   playAudio() {
     let audio = new Audio("../../assets/audio/A.mp3");
+    // when the button is press it will play the sound of the letter which is on the screen  {
+
+    // }
     audio.load();
     audio.play();
   }

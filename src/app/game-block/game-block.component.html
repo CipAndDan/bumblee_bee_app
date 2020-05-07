@@ -1,17 +1,27 @@
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons to buttons  -->
 
  
-<div class="game-block">
-    <div class="row">
-        <button class="btn btn-primary btn-lg" (click)="previous()">Previous</button>
-        <div class="curent-letter mx-auto d-block">
-            <img src="../../assets/img/{{curentLetter}}.png" alt="{{curentLetter}}" (click)="playAudio()">
+<div class="game-block justify-content-between">
+    <div class="d-flex align-items-center">
+        <div class="curent-letter p-2 mx-auto d-block">
+            <button class="btn btn-primary btn-lg" (click)="previous()"><i class="fa fa-chevron-left"></i> Previous</button>
+            <!-- Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>      -->
         </div>
-        <button class="btn btn-primary btn-lg" (click)="next()">Next</button>
+        <div class="curent-letter p-2 mx-auto d-block">
+            <img src="../../assets/img/letters/{{curentLetter}}.png" alt="{{curentLetter}}" (click)="playAudio()">
+        </div>
+        <div class="curent-letter p-2 mx-auto d-block">
+            <button class="btn btn-primary btn-lg" (click)="next()">Next <i class="fa fa-chevron-right"></i></button>
+            <!-- Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+        </div>
     </div>
 </div>
 
 <div class="letters img-fluid">
     <div *ngFor="let letter of letters" class="letter">
-        <img src="../../assets/img/{{letter}}.png" alt="{{letter}}" (click)="changeCurrentLetter(letter)">
+        <img src="../../assets/img/letters/{{letter}}.png" alt="{{letter}}" (click)="changeCurrentLetter(letter)">
     </div>
 </div>

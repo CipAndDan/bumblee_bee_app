@@ -10,6 +10,8 @@ import { LetterTracingComponent } from './letter-tracing/letter-tracing.componen
 import { NumberTracingComponent } from './number-tracing/number-tracing.component';
 import { AlphabetLearningComponent } from './alphabet-learning/alphabet-learning.component';
 import { LetterPairsComponent } from './letter-pairs/letter-pairs.component';
+import { SettingsComponent } from './settings/settings.component';
+import { AppButtonsComponent } from './app-buttons/app-buttons.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { LetterPairsComponent } from './letter-pairs/letter-pairs.component';
     LetterTracingComponent,
     NumberTracingComponent,
     AlphabetLearningComponent,
-    LetterPairsComponent
+    LetterPairsComponent,
+    SettingsComponent,
+    AppButtonsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,32 +1,20 @@
 <h1>Letter Tracing</h1>
 
 <div class="letter-tracing">
-    <div id="letter" class="carousel-slide" data-ride="carousel">
-        <ul class="carousel-indicators">
-            <li data-target="#letter" data-slide-to="0" class="active"></li>
-            <li data-target="#letter" data-slide-to="1"></li>
-            <li data-target="#letter" data-slide-to="2"></li>
-            <li data-target="#letter" data-slide-to="3"></li>
-        </ul>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../../assets/img/letter_carousel/tracing_A_1.jpg" alt="First part of tracing letter A" width="600" height="800">
-            </div>
-            <div class="carousel-item">
-                <img src="../../assets/img/letter_carousel/tracing_A_2.jpg" alt="Second part of tracing letter A" width="600" height="800">
-            </div>
-            <div class="carousel-item">
-                <img src="../../assets/img/letter_carousel/tracing_A_3.jpg" alt="Third part of tracing letter A" width="600" height="800">
-            </div>
-            <div class="carousel-item">
-                <img src="../../assets/img/letter_carousel/tracing_A_4.jpg" alt="Fourth part of tracing letter A" width="600" height="800">
-            </div>
-            <a class="carousel-control-prev" href="#letter" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </a>
-              <a class="carousel-control-next" href="#letter" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
+  <div id="letter" class="carousel-slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#letter" data-slide-to="0" class="active"></li>
+      <li data-target="#letter" data-slide-to="1"></li>
+      <li data-target="#letter" data-slide-to="2"></li>
+      <li data-target="#letter" data-slide-to="3"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="btn-back" (click)="back()"></div>
+        <img src="../../assets/img/letter_carousel/tracing_A_{{currentLetter}}.jpg" alt="First part of tracing letter A"
+             width="600" height="800">
+        <div class="btn-next" (click)="next()"></div>
+      </div>
     </div>
+  </div>
 </div>

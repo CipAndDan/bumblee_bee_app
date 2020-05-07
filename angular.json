@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "bumbleBeeTracing"
+    }
+  },
+  "defaultProject": "bumbleBeeTracing",
+  "cli": {
+    "analytics": "694882d1-3291-402f-9079-a0068dd70fb3"
+  }
 }

@@ -5,19 +5,22 @@ import { NumberTracingComponent } from './number-tracing/number-tracing.componen
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LetterTracingComponent } from './letter-tracing/letter-tracing.component';
+import { HomeComponent } from './home/home.component';
 
 
 // Build routes
 const routes: Routes = [
-  {path: "letter-tracing", component: LetterTracingComponent},
-  {path: "number-tracing", component: NumberTracingComponent},
-  {path: "alphabet-learning", component: AlphabetLearningComponent},
-  {path: "letter-pairs", component: LetterPairsComponent},
-  {path: "settings", component: SettingsComponent},
+  {path: 'letter-tracing', component: LetterTracingComponent},
+  {path: 'number-tracing', component: NumberTracingComponent},
+  {path: 'alphabet-learning', component: AlphabetLearningComponent},
+  {path: 'letter-pairs', component: LetterPairsComponent},
+  {path: 'settings', component: SettingsComponent},
+  {path: '', component: HomeComponent},
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

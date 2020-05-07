@@ -1,0 +1,13 @@
+.app-buttons {
+  display: flex;
+  flex-wrap: wrap;
+
+  .btn {
+    width: 50%;
+    padding: 8px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

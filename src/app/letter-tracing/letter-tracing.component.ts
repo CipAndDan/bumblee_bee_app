@@ -6,10 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./letter-tracing.component.scss']
 })
 export class LetterTracingComponent implements OnInit {
+  currentLetter: number = 1;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  next() {
+    if (this.currentLetter < 4) {
+      this.currentLetter += 1;
+    }
+  }
+
+  back() {
+    if (this.currentLetter > 1) {
+      this.currentLetter -= 1;
+    }
+  }
 }

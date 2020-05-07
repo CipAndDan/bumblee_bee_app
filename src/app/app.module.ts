@@ -11,7 +11,7 @@ import { NumberTracingComponent } from './number-tracing/number-tracing.componen
 import { AlphabetLearningComponent } from './alphabet-learning/alphabet-learning.component';
 import { LetterPairsComponent } from './letter-pairs/letter-pairs.component';
 import { SettingsComponent } from './settings/settings.component';
-import { AppButtonsComponent } from './app-buttons/app-buttons.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { AppButtonsComponent } from './app-buttons/app-buttons.component';
     AlphabetLearningComponent,
     LetterPairsComponent,
     SettingsComponent,
-    AppButtonsComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
